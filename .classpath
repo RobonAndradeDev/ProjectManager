@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.core.runtimeTarget/GlassFish">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="lib" path="D:/web/ProjectsManeger/src/mysql-connector-java-5.1.6-bin.jar" sourcepath="D:/web/ProjectsManeger/src/mysql-connector-java-5.1.6-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/lib/javaee.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javaee-kernel.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javamail-connector.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javamail-connector-l10n.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javamail-runtime.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.batch-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.ejb-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.el.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.enterprise.concurrent.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.enterprise.concurrent-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.enterprise.deploy-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.faces.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.inject.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.interceptor-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.jms-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.json.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.mail.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.management.j2ee-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.persistence.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.resource-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.security.auth.message-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.security.jacc-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.servlet.jsp.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.servlet.jsp.jstl.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.servlet.jsp.jstl-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.servlet.jsp-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.transaction-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.websocket-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.ws.rs-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.xml.registry-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/glassfish-4.0/glassfish/modules/javax.xml.rpc-api.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
