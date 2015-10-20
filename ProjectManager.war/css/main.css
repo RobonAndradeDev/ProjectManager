@@ -1,0 +1,31 @@
+/* CSS Document */
+header{
+	background-color:#6CC;
+	color:#FFF;	
+	text-align:center;
+	width: 100%;
+	margin-bottom: 7px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#generalHeader{
+	padding-bottom:25px;
+	padding-top:25px;
+	font-size:x-large;
+}
+#centerDiv{
+	float:left;
+}
+aside{
+	width:200px;
+	float:left;
+	margin-left:7px;
+}
+#nameUser{
+	float:right;
+	font-size:large;
+}
+#centerDiv, #myProjects, #allProjects{
+	border: #6CC solid 1px;
+	margin-bottom:7px;
+}
