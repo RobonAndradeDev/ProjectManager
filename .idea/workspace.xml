@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa4abc74-aa81-4fa0-9cf4-0f923eb1a4a6" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\PersonalProjects\ProjectManager\WebContent\META-INF\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="C:\PersonalProjects\ProjectManager\WebContent\WEB-INF\ajax\main.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\PersonalProjects\ProjectManager\WebContent\WEB-INF\web.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\PersonalProjects\ProjectManager\WebContent\css\login.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\PersonalProjects\ProjectManager\WebContent\css\main.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\PersonalProjects\ProjectManager\WebContent\js\jquery-1.10.2.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\PersonalProjects\ProjectManager\WebContent\js\login.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\PersonalProjects\ProjectManager\WebContent\js\main.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\PersonalProjects\ProjectManager\WebContent\login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\PersonalProjects\ProjectManager\WebContent\pages\main.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/Controller.java" afterPath="$PROJECT_DIR$/src/Controller/Controller.java" />
-    </list>
+    <list default="true" id="fa4abc74-aa81-4fa0-9cf4-0f923eb1a4a6" name="Default" comment="" />
     <ignored path="ProjectManager.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,8 +38,18 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjectManager.war/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1486486" vertical-offset="0" max-vertical-offset="816">
-              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.5748792" vertical-offset="170" max-vertical-offset="816">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectManager.war/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -476,6 +474,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectManager.war/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="799">
@@ -486,8 +492,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectManager.war/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1486486" vertical-offset="0" max-vertical-offset="816">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.5748792" vertical-offset="170" max-vertical-offset="816">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
           <folding />
         </state>
       </provider>
