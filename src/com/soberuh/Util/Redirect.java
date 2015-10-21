@@ -1,4 +1,4 @@
-
+package com.soberuh.Util;
 
 import java.io.IOException;
 
@@ -8,46 +8,45 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.soberuh.DAO.MysqlCon;
 
-
-public class MysqlConServlet extends HttpServlet {
+/**
+ * Servlet implementation class Redirect
+ */
+public class Redirect extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
-	protected void service(HttpServletRequest request, HttpServletResponse response)
-	throws ServletException, IOException{
-		System.out.println("veio e " + request.getParameter("shitText") );
-		RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
-		rd.forward(request,response);
-		
-	}
-	/*
-    public MysqlConServlet() throws SQLException {
-    	  closeConnetion(getConnection());    	  
-    	  
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Redirect() {
+        super();
     }
     
-    public Connection getConnection(){
-    	return new MysqlCon().getConnection();
+    @Override
+    protected void service(HttpServletRequest request, HttpServletResponse response)
+    		throws ServletException, IOException {
+    	super.service(request, response);
+    	RequestDispatcher action;
+    	String path;
+    	if(request.getSession().getAttribute(StringConstants.ATTR_LOGIN) == null ){
+    		path = StringConstants.PATH_INDEX;
+    	}else{
+    		path = StringConstants.PATH_MAIN;
+    	}
+    	action = request.getRequestDispatcher(path);
+    	action.forward(request, response);
     }
-    
-    public void closeConnetion(Connection con) throws SQLException{
-    	new MysqlCon().closeConnect(con);
-    }
-    */
-    
+
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
 	}
 
 }

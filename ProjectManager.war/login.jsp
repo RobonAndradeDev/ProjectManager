@@ -1,6 +1,8 @@
-<%@page import="Util.StringConstants"%>
-<%@page import="Bussiness.Developer"%>
+<%@page import="com.soberuh.Util.StringConstants"%>
+<%@page import="com.soberuh.Bussiness.Developer"%>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:out value="${sessionScope.login}"/>
 <%
 Developer dev = (Developer) request.getSession().getAttribute(StringConstants.ATTR_LOGIN);
 boolean warm = true;

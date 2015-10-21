@@ -22,19 +22,19 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>Controller</display-name>
-    <servlet-name>Controller</servlet-name>
-    <servlet-class>Controller.Controller</servlet-class>
+    <display-name>com.soberuh.Controller</display-name>
+    <servlet-name>com.soberuh.Controller</servlet-name>
+    <servlet-class>com.soberuh.Controller.Controller</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Controller</servlet-name>
+    <servlet-name>com.soberuh.Controller</servlet-name>
     <url-pattern>/controller.jsp</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
     <display-name>Redirect</display-name>
     <servlet-name>Redirect</servlet-name>
-    <servlet-class>Util.Redirect</servlet-class>
+    <servlet-class>com.soberuh.Util.Redirect</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Redirect</servlet-name>

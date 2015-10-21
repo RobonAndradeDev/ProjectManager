@@ -1,14 +1,14 @@
-﻿<%@page import="Util.StringConstants"%>
-<%@page import="Bussiness.Project"%>
+﻿<%@page import="com.soberuh.Util.StringConstants"%>
+<%@page import="com.soberuh.Bussiness.Project"%>
 <%@page import="java.util.ArrayList"%>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
 <ul>
-<%
-	ArrayList<Project> projetos = (ArrayList<Project>)request.getAttribute(StringConstants.ATTR_PROJETOS);
-	for(Project project : projetos){
-%>
-  		<a href=<%=project.getId() %>><li> <%=project.getNome() %> </li></a>
-<%		
-	}
-%>
+
+<c:forEach items="${projetos}" var="projeto">
+    <a href=${projeto.id}><li> ${projeto.nome} </li></a>
+</c:forEach>
+
 </ul>

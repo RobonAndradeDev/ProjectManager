@@ -1,4 +1,4 @@
-<%@ page import="Bussiness.Developer" %>
+<%@ page import="com.soberuh.Bussiness.Developer" %>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <% Developer dev = (Developer) request.getSession().getAttribute("login"); %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -6,9 +6,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Project Management</title>
-    <link rel="stylesheet" type="text/css" href="/ProjectsManeger/css/main.css">
-    <script type="text/javascript" src="/ProjectsManeger/js/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="/ProjectsManeger/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/ProjectManager/css/main.css">
+    <script type="text/javascript" src="/ProjectManager/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/ProjectManager/js/main.js"></script>
 </head>
 <body>
 	<header id="generalHeader">
