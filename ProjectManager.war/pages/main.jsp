@@ -28,7 +28,7 @@
             <aside>
             	<div id="myProjects">
                     <header>
-                        My Projects <a href="#" id="updateMyProjects"> F5 </a>
+                        My Projects <a href="#" id="updateMyProjects"> <img id="imgRefresh" src="/ProjectManager/img/atualizar.png" /> </a>
                     </header>
                     <div id="myProjectContent">
                     	projeto 1
@@ -36,7 +36,7 @@
                 </div>
             	<div id="allProjects">
                     <header>
-                        All Projects<a href="#" id="updateAllProjects"> F5 </a>
+                        All Projects <a href="#" id="updateAllProjects"> <img id="imgRefresh" src="/ProjectManager/img/atualizar.png" /> </a>
                     </header>
                     <div id="allProjectContent">
                         projeto 1
