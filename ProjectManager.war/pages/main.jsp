@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Project Management</title>
+	<title>Project Manager</title>
     <link rel="stylesheet" type="text/css" href="/ProjectManager/css/main.css">
     <script type="text/javascript" src="/ProjectManager/js/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="/ProjectManager/js/main.js"></script>

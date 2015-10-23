@@ -22,4 +22,5 @@ public class StringConstants {
 	public final static String ATTR_PROJETOS   = "projetos";
 	public final static String ATTR_PROJETO   = "projeto";
 	public final static String ATTR_FIRST_TIME = "firstTime";
+	public static final String APPLICATION_APPENDER = "applicationAppender";
 }

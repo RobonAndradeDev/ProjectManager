@@ -2,6 +2,7 @@ package com.soberuh.DAO;
 
 import com.soberuh.Bussiness.Project;
 import com.soberuh.Util.StringConstants;
+import org.hibernate.Session;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,9 +13,9 @@ public class ProjectDAO extends MysqlCon implements ClassDAO {
 	private String sql;
 	@Override
 	public String insert(HttpServletRequest request, HttpServletResponse response) {
-		sql = "insert into projeto (nome) VALUES (?)";
 		Project projeto = new Project();
 		projeto.setNome(request.getParameter(StringConstants.ATTR_NOME));
+		sql = "insert into projeto (nome) VALUES (?)";
 		executeSQL(sql);
 		try {
 			st.setString(1, projeto.getNome());
@@ -24,9 +25,20 @@ public class ProjectDAO extends MysqlCon implements ClassDAO {
 		}finally{
 			closeConnect(st, null);
 		}
-		
 		//TODO Send to the correct webpage. 
 		return null;
+	}
+	public void inserir(Object obj) throws Exception {
+		Boolean txCreated = SessionDAO.getCurrentTransaction() == null;
+		try {
+			Session session = SessionDAO.currentSession();
+			if (txCreated) SessionDAO.beginTransaction();
+			session.save(obj);
+			if (txCreated) SessionDAO.commitTransaction();
+		} catch (Exception e) {
+			if (txCreated) SessionDAO.rollbackTransaction();
+			throw new Exception(e);
+		}
 	}
 
 	@Override
