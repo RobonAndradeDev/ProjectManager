@@ -28,12 +28,12 @@ public class ProjectDAO extends MysqlCon implements ClassDAO {
 		//TODO Send to the correct webpage. 
 		return null;
 	}
-	public void inserir(Object obj) throws Exception {
+	public void inserir(Project project) throws Exception {
 		Boolean txCreated = SessionDAO.getCurrentTransaction() == null;
 		try {
 			Session session = SessionDAO.currentSession();
 			if (txCreated) SessionDAO.beginTransaction();
-			session.save(obj);
+			session.save(project);
 			if (txCreated) SessionDAO.commitTransaction();
 		} catch (Exception e) {
 			if (txCreated) SessionDAO.rollbackTransaction();
