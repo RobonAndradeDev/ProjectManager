@@ -1,7 +1,5 @@
 package com.soberuh.DAO;
 
-import com.soberuh.Util.StringConstants;
-import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -15,7 +13,7 @@ public class SessionDAO {
     /**
      * Logger da classe.
      */
-    protected static Logger log = Logger.getLogger(StringConstants.APPLICATION_APPENDER);
+   // protected static Logger log = Logger.getLogger(StringConstants.APPLICATION_APPENDER);
 
     /**
      * Fábrica de sessões com Hibernate.
@@ -75,11 +73,12 @@ public class SessionDAO {
                  * resultado para ganratir que  a atualização foi correta. Como
                  * NOCOUNT está ligado, -1 sempre retornado.
                  */
-                session.connection().createStatement()
-                        .execute("SET NOCOUNT OFF");
-                session.connection().createStatement().execute("SET ARITHABORT ON");
+                /*
+                 session.connection().createStatement().execute("SET NOCOUNT OFF");
+                 session.connection().createStatement().execute("SET ARITHABORT ON");
+                */
             } catch (final Exception e) {
-                SessionDAO.log.error("Erro em SessionDAO.openSession: ", e);
+               // SessionDAO.log.warning("Erro em SessionDAO.openSession: " + e.getMessage());
                 throw new RuntimeException(e.getMessage());
             }
         }
@@ -103,6 +102,7 @@ public class SessionDAO {
      * atual.
      */
     public static void commitTransaction() {
+        /*
         Transaction transaction = transactionThread.get();
         try{
             if (transaction != null && !transaction.wasCommitted()
@@ -114,7 +114,7 @@ public class SessionDAO {
         }finally {
             transactionThread.set(null);
         }
-
+        */
     }
 
     /**
@@ -122,8 +122,8 @@ public class SessionDAO {
      * atual.
      */
     public static void rollbackTransaction() {
+        /*
         Transaction transaction = transactionThread.get();
-
         try {
             if (transaction != null && !transaction.wasCommitted()
                     && !transaction.wasRolledBack()) {
@@ -134,15 +134,17 @@ public class SessionDAO {
         } finally {
             transactionThread.set(null);
         }
-
+        */
     }
 
     public static void hsqlCleanup(final Session s) {
+        /*
         try {
             s.connection().createStatement().execute("SHUTDOWN");
         } catch (final Exception e) {
             SessionDAO.log.error("Erro em SessionDAO.hsqlCleanup: ", e);
         }
+        */
     }
 
     public static void setSessionFactory(SessionFactory sessionFactory) {

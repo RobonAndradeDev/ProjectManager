@@ -8,9 +8,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-//import
-
-
 public class MysqlCon{
 	private String driver = "org.gjt.mm.mysql.Driver", 
 				   url 	  = "jdbc:mysql://localhost:3306/projectmanager",

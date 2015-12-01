@@ -1,19 +1,14 @@
 package com.soberuh.DAO;
 
 import com.soberuh.Bussiness.Project;
-import com.soberuh.Util.StringConstants;
-import org.hibernate.Session;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.sql.ResultSet;
-import java.util.ArrayList;
 
-public class ProjectDAO extends MysqlCon implements ClassDAO {
-	private String sql;
-	@Override
+public class ProjectDAO extends MysqlConHibernate implements ClassDAO {
+
 	public String insert(HttpServletRequest request, HttpServletResponse response) {
-		Project projeto = new Project();
+		/*Project projeto = new Project();
 		projeto.setNome(request.getParameter(StringConstants.ATTR_NOME));
 		sql = "insert into projeto (nome) VALUES (?)";
 		executeSQL(sql);
@@ -26,23 +21,17 @@ public class ProjectDAO extends MysqlCon implements ClassDAO {
 			closeConnect(st, null);
 		}
 		//TODO Send to the correct webpage. 
+		*/
 		return null;
-	}
-	public void inserir(Project project) throws Exception {
-		Boolean txCreated = SessionDAO.getCurrentTransaction() == null;
-		try {
-			Session session = SessionDAO.currentSession();
-			if (txCreated) SessionDAO.beginTransaction();
-			session.save(project);
-			if (txCreated) SessionDAO.commitTransaction();
-		} catch (Exception e) {
-			if (txCreated) SessionDAO.rollbackTransaction();
-			throw new Exception(e);
-		}
+
 	}
 
-	@Override
+	public void insert(Project project) throws Exception {
+		insertData(project);
+	}
+
 	public String update(HttpServletRequest request, HttpServletResponse response) {
+	/*
 		sql = "update projeto set nome = ? where idprojeto = ?";
 		int id = Integer.parseInt(request.getParameter(StringConstants.ATTR_ID));
 		Project project = new Project();
@@ -57,13 +46,14 @@ public class ProjectDAO extends MysqlCon implements ClassDAO {
 		}finally{
 			closeConnect(st, null);
 		}
-		
+	*/
 		//TODO Send to the correct webpage.
 		return null;
 	}
 
-	@Override
+
 	public String delete(HttpServletRequest request, HttpServletResponse response) {
+		/*
 		sql = "delete from projeto where idprojeto = ?";
 		int id = Integer.parseInt(request.getParameter(StringConstants.ATTR_ID));
 		executeSQL(sql);
@@ -75,23 +65,24 @@ public class ProjectDAO extends MysqlCon implements ClassDAO {
 		}finally{
 			closeConnect(st, null);
 		}
-
+		*/
 		//TODO Send to the correct webpage.
 		return null;
 	}
 
-	@Override
+
 	public String list(HttpServletRequest request, HttpServletResponse response) {
+		/*
 		sql = "select * from projeto";
 		ResultSet rs;
 		ArrayList<Project> projetos = new ArrayList<Project>();
 		executeSQL(sql);
 		try {
 			rs = st.executeQuery();		
-			while(rs.next()){
+			while(rs.next()) {
 				Project projeto = new Project();
 				projeto.setNome(rs.getString(StringConstants.ATTR_NOME));
-				projeto.setId(rs.getInt(StringConstants.ATTR_ID_PROJETO));
+				projeto.setId(rs.getLong(StringConstants.ATTR_ID_PROJETO));
 				projetos.add(projeto);
 			}
 		} catch (Exception e) {
@@ -101,6 +92,8 @@ public class ProjectDAO extends MysqlCon implements ClassDAO {
 		}
 		request.setAttribute(StringConstants.ATTR_PROJETOS, projetos);
 		return StringConstants.PATH_AJAX_MAIN;
+		*/
+		return null;
 	}
 
 }

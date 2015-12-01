@@ -44,7 +44,7 @@ public class HoraDAO extends MysqlCon implements ClassDAO {
 			st.setInt(1, dev.getId());
 			rs = st.executeQuery();
 			while(rs.next()){
-				projeto.setId(rs.getInt(StringConstants.ATTR_ID_PROJETO));
+				projeto.setId(rs.getLong(StringConstants.ATTR_ID_PROJETO));
 				projeto.setNome(rs.getString(StringConstants.ATTR_NOME));
 			}
 			ArrayList<Project> projetos = new ArrayList<Project>();

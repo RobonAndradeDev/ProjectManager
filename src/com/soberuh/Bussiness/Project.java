@@ -1,17 +1,20 @@
 package com.soberuh.Bussiness;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+
+import javax.persistence.*;
 
 @Entity
+@Table(name="projeto")
 public class Project {
-	private int id;
-	private String nome;
 	@Id
-	public void setId(int id) {
+	@GeneratedValue
+	@Column(name = "idprojeto")
+	private Long id;
+	private String nome;
+	public void setId(Long id) {
 		this.id = id;
 	}
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 	public String getNome() {
