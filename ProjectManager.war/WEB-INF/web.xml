@@ -40,4 +40,14 @@
     <servlet-name>Redirect</servlet-name>
     <url-pattern>/css</url-pattern>
   </servlet-mapping>
+  <!-- Config to JSF -->
+  <servlet>
+    <servlet-name>FacesServlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FacesServlet</servlet-name>
+    <url-pattern>*.xhtml</url-pattern>
+  </servlet-mapping>
 </web-app>
