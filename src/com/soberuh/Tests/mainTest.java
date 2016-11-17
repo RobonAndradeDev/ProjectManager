@@ -8,6 +8,6 @@ import com.soberuh.DAO.MysqlConHibernate;
 public class mainTest {
     public static void main(String[] args ){
         new MysqlConHibernate();
-        System.out.println("test ok");
+        System.out.println("####   Print this shit on jenkins.  ####");
     }
 }
