@@ -9,5 +9,6 @@ public class mainTest {
     public static void main(String[] args ){
         new MysqlConHibernate();
         System.out.println("Print commit it and this shit on jenkins.");
+        Crash java!
     }
 }
